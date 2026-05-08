@@ -7,8 +7,3 @@
 
 # Generated during compile stage — recreated by make, never committed
 *.o
-
-# ─── Executable files (tool binaries) ─────────────────────────────────────────
-# Leading slash anchors the pattern to project root only — prevents matching
-# tools/anti_DOS/ directory or any other subdirectory with the same name
-/capture
