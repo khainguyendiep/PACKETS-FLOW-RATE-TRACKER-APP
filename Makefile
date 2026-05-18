@@ -20,10 +20,10 @@ CORE_SRCS = core/logger/logger.cpp \
             core/utils/utils.cpp
 CORE_OBJS = $(CORE_SRCS:.cpp=.o)
 
-# ─── anti_DOS tool ─────────────────────────────────────────────────────────────
-PACKETFLOWSTATE_TARGET = packets_flow_rate_tracker
-PACKETFLOWSTATE_SRCS   = capture/main.cpp \
-                		 capture/capture.cpp
+# ─── Packets flow rate tracker tool ─────────────────────────────────────────────────────────────
+PACKETFLOWSTATE_TARGET = PACKETS-FLOW-RATE-TRACKER-APP
+PACKETFLOWSTATE_SRCS   = multi-threading/main.cpp \
+                		 multi-threading/capture.cpp
 PACKETFLOWSTATE_OBJS   = $(PACKETFLOWSTATE_SRCS:.cpp=.o)
 
 # ─── Default target: build all tools ──────────────────────────────────────────
