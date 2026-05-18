@@ -7,3 +7,6 @@
 
 # Generated during compile stage — recreated by make, never committed
 *.o
+
+/development_process
+
