@@ -10,6 +10,7 @@
 #include <pthread.h>
 #include <atomic>
 #include <unistd.h>
+#include <fstream>
 
 #define QUEUE_CAP 8
 #define MAX_DEVS 10000
