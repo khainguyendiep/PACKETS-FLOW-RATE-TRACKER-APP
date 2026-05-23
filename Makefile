@@ -21,7 +21,7 @@ CORE_SRCS = core/logger/logger.cpp \
 CORE_OBJS = $(CORE_SRCS:.cpp=.o)
 
 # ─── Packets flow rate tracker tool ─────────────────────────────────────────────────────────────
-PACKETFLOWSTATE_TARGET = PACKETS-FLOW-RATE-TRACKER-APP
+PACKETFLOWSTATE_TARGET = packets_flow_rate_tracker
 PACKETFLOWSTATE_SRCS   = multi-threading/main.cpp \
                 		 multi-threading/capture.cpp
 PACKETFLOWSTATE_OBJS   = $(PACKETFLOWSTATE_SRCS:.cpp=.o)
