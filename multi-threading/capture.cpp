@@ -3,7 +3,7 @@
 
 #define QUEUE_CAP 8
 
-const std::string log_path = "/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log";
+const std::string LOG_PATH = "/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log";
 
 void packet_handler(u_char *args,
                     const struct pcap_pkthdr *header,
@@ -109,9 +109,11 @@ void *handle_thread(void *arg) {
 	//this condition is asure that if the program is stop (like the user using ctrl + C), the cosumber will handle all data in the queue before stop. to avoid lost data.
 	uint64_t prev = 0;
     //while (std::atomic_load(&running_state) || g_queue.count > 0) {
+	std::ofstream clear_file(LOG_PATH, std::ios::trunc);
+	clear_file.close();
 	while(true){
 		sleep(1);
-        write_csv(std::atomic_load(&total_packets) - prev, log_path); 
+        write_csv(std::atomic_load(&total_packets) - prev, LOG_PATH); 
 		prev = atomic_load(&total_packets);
     }
     return NULL;
