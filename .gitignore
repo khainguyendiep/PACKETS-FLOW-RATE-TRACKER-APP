@@ -10,3 +10,6 @@
 
 /development_process
 
+# ─── Executable files (tool binaries) ─────────────────────────────────────────
+/packets_flow_rate_tracker
+
