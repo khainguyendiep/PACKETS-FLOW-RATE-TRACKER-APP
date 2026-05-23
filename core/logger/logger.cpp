@@ -3,8 +3,8 @@
 #include <iomanip>
 #include <fstream>
 
-void write_csv(long number_of_packet, const std::string &log_path){
-	std::ofstream log_file(log_path, std::ios::app);
+void write_csv(long number_of_packet, const std::string &LOG_PATH){
+	std::ofstream log_file(LOG_PATH, std::ios::app);
 	
 	auto local_time_now = std::chrono::system_clock::now();
     std::time_t now_c = std::chrono::system_clock::to_time_t(local_time_now);
