@@ -1,3 +1,14 @@
+LOG_FILE = /var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log
+
+.PHONY: all
+
+all: $(LOG_FILE)
+
+# Target run only log file does not exist
+$(LOG_FILE):
+	sudo mkdir -p $(@D)
+	sudo touch $@
+
 # Compiler
 CXX = g++
 
