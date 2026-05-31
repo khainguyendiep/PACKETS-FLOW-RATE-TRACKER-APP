@@ -3,7 +3,7 @@
 
 #define QUEUE_CAP 8
 
-const std::string LOG_PATH = "/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log";
+const std::string LOG_PATH = "/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.csv";
 
 void packet_handler(u_char *args,
                     const struct pcap_pkthdr *header,

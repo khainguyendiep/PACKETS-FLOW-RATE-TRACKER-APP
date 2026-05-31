@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 import numpy as np
 
-df_chart = pd.read_csv("/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log", header = None, names=["packets","time"])
+df_chart = pd.read_csv("/var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.csv", header = None, names=["packets","time"])
 
 df_chart['time'] = pd.to_datetime(df_chart['time'], format='%H:%M:%S')
 

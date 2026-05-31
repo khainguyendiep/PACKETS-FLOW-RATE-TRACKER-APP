@@ -1,4 +1,4 @@
-LOG_FILE = /var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.log
+LOG_FILE = /var/log/packets_flow_rate_tracker/packets_flow_rate_tracker.csv
 
 .PHONY: all
 
